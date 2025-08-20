@@ -4,30 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>計畫緣起｜澄清湖的前世今生｜大貝湖記憶計畫</title>
-  <meta name="description" content="大貝湖（澄清湖）記憶計畫開場頁：完整文案、無圖片版本。適用 GitHub Pages，純靜態、單檔即上線。" />
+  <meta name="description" content="大貝湖（澄清湖）記憶計畫開場頁：GitHub Pages 版本，含黑白與彩色對照示例。" />
   <meta name="theme-color" content="#2e7d67" />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="./index.html" />
   <style>
     :root{
-      --bg:#f5efe4;
-      --fg:#1f2937;
-      --muted:#6b7280;
-      --accent:#2e7d67;
-      --card:#ffffff;
-      --max:760px;
-      --header:84px;
+      --bg:#f5efe4; --fg:#1f2937; --muted:#6b7280; --accent:#2e7d67;
+      --card:#ffffff; --max:960px; --header:84px;
     }
     html{scroll-behavior:smooth; scroll-padding-top: var(--header)}
     body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 system-ui,-apple-system,"Noto Sans TC",Segoe UI,Roboto,Helvetica,Arial}
     .container{max-width:var(--max);margin:0 auto;padding:24px}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
     header{position:sticky;top:0;z-index:40;background:rgba(245,239,228,.9);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-bottom:1px solid #eadfce}
     .nav{display:flex;gap:16px;align-items:center;justify-content:space-between;padding:10px 24px}
     .brand{font-weight:700;letter-spacing:.02em}
-    .nav a{opacity:.9}
-    .nav a:hover{opacity:1}
+    .nav a{opacity:.9} .nav a:hover{opacity:1}
     .hero{background:linear-gradient(180deg,#efe6d6 0%,#f7f2e9 100%);border-bottom:1px solid #eadfce}
     .hero .inner{padding:64px 24px 40px}
     h1{font-size:clamp(28px,4.5vw,40px);line-height:1.2;margin:0 0 12px}
@@ -36,14 +29,15 @@
     .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:12px;font-weight:700;letter-spacing:.01em}
     .btn.alt{background:#fff;color:var(--accent);border:1px solid var(--accent)}
     section{padding:32px 0}
-    h2{font-size:clamp(22px,3vw,28px);margin:0 0 10px}
-    p{margin:0 0 14px}
+    h2{font-size:clamp(22px,3vw,28px);margin:0 0 10px} p{margin:0 0 14px}
     .card{background:var(--card);border:1px solid #eadfce;border-radius:16px;padding:20px;margin:16px 0}
-    .list{padding-left:1.1em}
-    .list li{margin:6px 0}
-    footer{border-top:1px solid #eadfce;color:var(--muted);padding:28px 0 44px}
+    .list{padding-left:1.1em} .list li{margin:6px 0}
     .to-top{position:fixed;right:16px;bottom:16px;border-radius:999px;background:var(--accent);color:#fff;padding:10px 14px;font-weight:700;text-decoration:none}
-    @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+    footer{border-top:1px solid #eadfce;color:var(--muted);padding:28px 0 44px}
+    .compare{display:grid;gap:14px;grid-template-columns:1fr;align-items:start}
+    .compare figure{margin:0} .compare img{width:100%;height:auto;border-radius:14px;border:1px solid #eadfce;display:block}
+    .compare figcaption{font-size:14px;color:var(--muted);margin-top:6px}
+    @media(min-width:820px){ .compare{grid-template-columns:1fr 1fr} }
     .focus-anchor{outline:none}
   </style>
 </head>
@@ -61,6 +55,7 @@
       </div>
     </nav>
   </header>
+
   <section class="hero">
     <div class="container inner">
       <h1>計畫緣起｜澄清湖的前世今生</h1>
@@ -71,28 +66,34 @@
       </div>
     </div>
   </section>
+
   <main id="main" class="container">
     <section id="lead" tabindex="-1" class="focus-anchor">
       <p>清晨的湖面仍有薄霧，欄杆邊「大貝湖」三字的老影像在許多相簿裡反覆出現。這片水域曾是灌溉埤塘，後成工業給水的水庫，又在1960年開園成為南臺灣最熱鬧的風景地之一，1963年定名「澄清湖」。它記錄的不只是高雄的城市擴張，也是一代又一代人的日常與情感。當我們啟動「大貝湖記憶計畫」，目的不在懷舊，而是把可考的事實與可感的記憶整理成公共資產。</p>
     </section>
+
     <section id="history" tabindex="-1" class="focus-anchor">
       <h2>地名與地景：從「大埤」到「澄清湖」</h2>
       <p>地名的演變，映照政經力量與地方認同的交會。從曹公圳體系中的「大埤」，到戰後整修的工業給水設施，再到正式對外開放的「大貝湖風景區」，湖岸逐步被亭台、曲橋、瞭望塔所串起。九曲橋把人帶往水中央，中興塔讓人俯瞰整個盆地；「三橋六勝八景」的視覺語言，將一座水庫轉譯為可被遊逛、被理解的地景。更名「澄清湖」後，題字、石刻與行館留下了清晰的年代標記，提醒我們：地方的名稱不是單一敘事，而是時代話語在自然上的投影。</p>
     </section>
+
     <section id="people" tabindex="-1" class="focus-anchor">
       <h2>人的故事：城市日常與集體記憶</h2>
       <p>若把澄清湖當成一座城市攝影棚，從校外教學到情侶約會、從工會郊遊到軍旅記憶，鏡頭從未停過。許多人第一次走九曲橋、第一次登高望市，就在這裡；也有家庭在湖邊搭過帳篷、煮過一壺茶。隨都市化推進，周邊建設改寫了水文與景觀，小埤湖的消失至今仍在居民談話裡被提起。近年管理權與開放政策調整，免門票吸引更多人親近，但如何兼顧水源安全與遊憩品質，成為新的討論主題。這些不同世代的場景，交疊成一部地方社會史。</p>
     </section>
+
     <section id="env" tabindex="-1" class="focus-anchor">
       <h2>環境與治理：在水源保護與開放之間</h2>
       <div class="card">
         <p>作為民生水源，澄清湖承擔的不是單純的「漂亮」。水位調度與清淤工程關乎供水穩定，藻類暴發與優養化風險牽動治理成效；外來種闖入或被棄養的事件，提醒我們環境教育不可鬆手。另一方面，友善的棲地管理曾讓多年未見的雁鴨再度出現，顯示只要方法正確，生態恢復並非不可期。如何在保護水質、生態多樣性與公共使用之間建立可持續的平衡，需要更透明的資料、更明確的承載量管理，也需要公民持續參與。</p>
       </div>
     </section>
+
     <section id="why" tabindex="-1" class="focus-anchor">
       <h2>為何此刻啟動</h2>
       <p>我們正處在大量影像、資料即將散佚的門檻：長輩逐漸凋零，底片褪色，口述細節在一年一年間變得模糊。這項計畫的基本動作很簡單——把能證實歷史的文獻、照片、票根與藍圖找回來；把能補足人情溫度的回憶、習慣與場景說清楚——但它需要社群的長期投入與開放協作。我們將以時間軸整理事件脈絡，以互動地圖定位地標與消失的景點，建立可檢索的「記憶迴廊」，並把來源一一註記。</p>
     </section>
+
     <section id="participate" tabindex="-1" class="focus-anchor">
       <h2>你可以怎麼參與</h2>
       <div class="card">
@@ -100,30 +101,31 @@
         <p><strong>2) 參與口述訪談</strong>：分享你在九曲橋、中興塔、澂清樓、沉砂池等地的第一手記憶與見聞，補足文字無法捕捉的細節。</p>
         <p><strong>3) 協力比對與校對</strong>：協助比對地圖、校對年份與人名，或提供可查證的新聞、檔案連結，讓資料更嚴謹可用。</p>
       </div>
+
       <div class="card">
-        <h3 style="margin:0 0 10px;font-size:18px">交付與網站</h3>
-        <ul class="list">
-          <li>專題網站採單頁式：計畫緣起 → 時間長廊 → 人們的故事 → 互動地圖 → 記憶迴廊 → 資料來源。</li>
-          <li>每張影像、每段敘述對應可核對之來源；後續補上引用連結與開放授權標示。</li>
-          <li>我們將以開放格式與版本控管保存，利於長期維護與引用。</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3 style="margin:0 0 10px;font-size:18px">發佈檢查表</h3>
-        <ul class="list">
-          <li>檔名與結構：<code>index.html</code>；所有連結以相對路徑表示。</li>
-          <li>無障礙：替代文字（本版無圖）、錨點可鍵盤導覽、對比度合格。</li>
-          <li>法務與授權：後續素材使用 CC BY-NC 4.0 或專案授權；標示清楚。</li>
-          <li>內容校對：年份、人名、地名與地標一致；避免口述與文獻互斥。</li>
-          <li>維運：建立變更記錄與資料更新頻率（如每季一次）。</li>
-        </ul>
+        <h3 style="margin:0 0 10px;font-size:20px">給我們舊照片　還你彩色回憶</h3>
+        <p>你提供的每一張黑白影像，都可能喚回一段被時間沖淡的細節。我們會以不過度修飾為原則進行修復與上色，保留歲月質地，同時讓更多人看見當年的光線、衣著與表情。</p>
+        <div class="compare" style="margin-top:12px">
+          <figure>
+            <img src="images/father_son_bw.jpg" alt="黑白父子合影（大貝湖欄杆前的原始照片）" loading="lazy" width="1200" height="1284">
+            <figcaption>黑白原件（示意）</figcaption>
+          </figure>
+          <figure>
+            <img src="images/father_son_color.jpg" alt="彩色父子合影（大貝湖欄杆前的上色修復範例）" loading="lazy" width="1024" height="1536">
+            <figcaption>彩色回憶（修復示例）</figcaption>
+          </figure>
+        </div>
+        <p style="font-size:14px;color:var(--muted);margin-top:10px">＊示例僅作展示，實際修復會先與提供者確認授權與修復幅度。</p>
       </div>
     </section>
   </main>
+
   <footer class="container">
-    <p>© 大貝湖記憶計畫｜此頁為無圖片、離線可用版本。可直接另存為 <code>index.html</code> 使用。</p>
+    <p>© 大貝湖記憶計畫｜此頁為 GitHub Pages 版本。影像以相對路徑載入，直接上傳至倉庫根目錄即可。</p>
   </footer>
+
   <a class="to-top" href="#top" aria-label="回到頂部">↑</a>
+
   <script>
     (function(){
       const root = document.documentElement;
@@ -132,27 +134,17 @@
         const h = Math.ceil(header.getBoundingClientRect().height);
         root.style.setProperty('--header', h + 'px');
       }
-      setHeaderVar();
-      window.addEventListener('resize', setHeaderVar, { passive:true });
-      if(location.hash){
-        const id = location.hash.slice(1);
-        const el = document.getElementById(id);
-        if(el){ setTimeout(()=>{ el.scrollIntoView({ behavior:'smooth', block:'start' }); el.focus({preventScroll:true}); }, 0); }
-      }
+      setHeaderVar(); window.addEventListener('resize', setHeaderVar, { passive:true });
+      if(location.hash){ const id = location.hash.slice(1); const el = document.getElementById(id); if(el){ setTimeout(()=>{ el.scrollIntoView({ behavior:'smooth', block:'start' }); el.focus({preventScroll:true}); }, 0); } }
       document.querySelectorAll('a[href^="#"]').forEach(a=>{
         a.addEventListener('click', function(e){
-          const id = this.getAttribute('href').slice(1);
-          if(!id) return;
-          const el = document.getElementById(id);
-          if(!el) return;
-          e.preventDefault();
-          el.scrollIntoView({ behavior:'smooth', block:'start' });
-          setTimeout(()=>el.focus({preventScroll:true}), 300);
-          history.pushState(null, '', '#' + id);
+          const id = this.getAttribute('href').slice(1); if(!id) return;
+          const el = document.getElementById(id); if(!el) return;
+          e.preventDefault(); el.scrollIntoView({ behavior:'smooth', block:'start' });
+          setTimeout(()=>el.focus({preventScroll:true}), 300); history.pushState(null, '', '#' + id);
         }, { passive:false });
       });
     })();
   </script>
-  <noscript>此頁無需外部腳本；若關閉 JavaScript，錨點仍可使用，且已以 <code>scroll-padding-top</code> 避免被頂端導覽遮住。</noscript>
 </body>
 </html>
